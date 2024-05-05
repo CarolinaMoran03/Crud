@@ -1,0 +1,166 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="icon" type="imagine/png"href="https://www.unemi.edu.ec/wp-content/uploads/2021/09/LOGO-WEB-AZUL.png">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>UNEMI-Universidad Estatal De Milagro</title>
+    
+
+    <!-- Bootstrap -->
+    <link href="{% static '/FrWork/admin_lte/vendors/bootstrap/dist/css/bootstrap.min.css' %}" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="{% static '/FrWork/admin_lte/vendors/nprogress/nprogress.css' %}" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="{% static '/FrWork/admin_lte/vendors/iCheck/skins/flat/green.css' %}" rel="stylesheet">
+	
+    <!-- bootstrap-progressbar -->
+    <link href="{% static '/FrWork/admin_lte/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css' %}" rel="stylesheet">
+    <!-- JQVMap -->
+    <link href="{% static '/FrWork/admin_lte/vendors/jqvmap/dist/jqvmap.min.css' %}" rel="stylesheet"/>
+    <!-- bootstrap-daterangepicker -->
+    <link href="{% static '/FrWork/admin_lte/vendors/bootstrap-daterangepicker/daterangepicker.css' %}" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="{% static '/FrWork/admin_lte/build/css/custom.min.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+
+  <style>
+    .text{
+      font-size: 18px;
+    }
+  </style>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a class="site_title" href="http://127.0.0.1:8000/"><i class="fa fa-institution" style="color:#fe9800df;"></i>  <span>UNEMI</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <br />
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>General</h3>
+                <ul class="nav side-menu">
+                  <li><a href="http://127.0.0.1:8000/"><i class="fa fa-home" style="color:#fe9800ab;"></i>Universidad Estatal De Milagro</a>
+                    
+                  </li>
+                  <li><a><i class="fa fa-user" style="color:#fe9800ab;"></i>Registrar Estudiantes<span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="listar"><i class="fa fa-users" style="color:#5ea2e1;"></i> Lista De Estudiantes</a></li>
+                      <li><a href="agregar"><i class="fa fa-user-plus" style="color:#5ea2e1;"></i> Agregar</a></li>
+                      <li><a href="actualizar"><i class="fa fa-user-plus" style="color:#5ea2e1;"></i> Actualizar</a></li>
+                      <li><a href="eliminar"><i class="fa fa-user-times" style="color:#5ea2e1;"></i> Eliminar</a></li>
+                      
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="pull-right">
+              <div class="col-md-612 col-18 text-center text-md-start">
+                <span style="font-size: 14px;">
+                  <a href="https://www.unemi.edu.ec/" target="_blank" style="color:#fe9800;">UNEMI</a><br>
+                <a href="https://www.unemi.edu.ec/" target="_blank"  style="color:#ffffff54;">Todos los derechos reservados © 2022</a>
+                </span>
+              </div>
+              <center><pre class="text" style="color:#fe9900;"><strong>Grupo A 3ro Software</strong></pre></center>
+              <center><pre class="text" style="color:#fe9900;"><strong>ING: Norma Valencia</strong></pre></center>
+            </div>
+            <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
+          </div>
+        </div>
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+              <nav class="nav navbar-nav">
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
+
+
+        <!-- ****************************************   -->
+
+        {% block content %}
+        {% endblock %}
+
+
+        <!-- footer content -->
+        <footer>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+    <!-- jQuery -->
+    <script src="{% static '/FrWork/admin_lte/vendors/jquery/dist/jquery.min.js' %}"></script>
+    <!-- Bootstrap -->
+    <script src="{% static '/FrWork/admin_lte/vendors/bootstrap/dist/js/bootstrap.bundle.min.js' %}"></script>
+    <!-- FastClick -->
+    <script src="{% static '/FrWork/admin_lte/vendors/fastclick/lib/fastclick.js' %}"></script>
+    <!-- NProgress -->
+    <script src="{% static '/FrWork/admin_lte/vendors/nprogress/nprogress.js' %}"></script>
+    <!-- Chart.js -->
+    <script src="{% static '/FrWork/admin_lte/vendors/Chart.js/dist/Chart.min.js' %}"></script>
+    <!-- gauge.js -->
+    <script src="{% static '/FrWork/admin_lte/vendors/gauge.js/dist/gauge.min.js' %}"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="{% static '/FrWork/admin_lte/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js' %}"></script>
+    <!-- iCheck -->
+    <script src="{% static '/FrWork/admin_lte/vendors/iCheck/icheck.min.js' %}"></script>
+    <!-- Skycons -->
+    <script src="{% static '/FrWork/admin_lte/vendors/skycons/skycons.js' %}"></script>
+    <!-- Flot -->
+    <script src="{% static '/FrWork/admin_lte/vendors/Flot/jquery.flot.js' %}"></script>
+    <script src="{% static '/FrWork/admin_lte/vendors/Flot/jquery.flot.pie.js' %}"></script>
+    <script src="{% static '/FrWork/admin_lte/vendors/Flot/jquery.flot.time.js' %}"></script>
+    <script src="{% static '/FrWork/admin_lte/vendors/Flot/jquery.flot.stack.js' %}"></script>
+    <script src="{% static '/FrWork/admin_lte/vendors/Flot/jquery.flot.resize.js' %}"></script>
+    <!-- Flot plugins -->
+    <script src="{% static '/FrWork/admin_lte/vendors/flot.orderbars/js/jquery.flot.orderBars.js' %}"></script>
+    <script src="{% static '/FrWork/admin_lte/vendors/flot-spline/js/jquery.flot.spline.min.js' %}"></script>
+    <script src="{% static '/FrWork/admin_lte/vendors/flot.curvedlines/curvedLines.js' %}"></script>
+    <!-- DateJS -->
+    <script src="{% static '/FrWork/admin_lte/vendors/DateJS/build/date.js' %}"></script>
+    <!-- JQVMap -->
+    <script src="{% static '/FrWork/admin_lte/vendors/jqvmap/dist/jquery.vmap.js' %}"></script>
+    <script src="{% static '/FrWork/admin_lte/vendors/jqvmap/dist/maps/jquery.vmap.world.js' %}"></script>
+    <script src="{% static '/FrWork/admin_lte/vendors/jqvmap/examples/js/jquery.vmap.sampledata.js' %}"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="{% static '/FrWork/admin_lte/vendors/moment/min/moment.min.js' %}"></script>
+    <script src="{% static '/FrWork/admin_lte/vendors/bootstrap-daterangepicker/daterangepicker.js' %}"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="{% static '/FrWork/admin_lte/build/js/custom.min.js' %}"></script>
+	
+  </body>
+  <nav class="nav nav-footer justify-content-center justify-content-md-end svelte-1d5pxxr">
+    <a class="nav-link active ps-0 svelte-1d5pxxr" href="https://pregradovirtual.unemi.edu.ec/" target="_blank" style="color:#fe9900;"><strong class="text">Pregrado</strong></a>
+    <a class="nav-link svelte-1d5pxxr" href="https://sga.unemi.edu.ec/" target="_blank" style="color:#fe9900;"><strong class="text">SGA</strong></a>
+    <a class="nav-link svelte-1d5pxxr" href="https://admision.unemi.edu.ec/" target="_blank" style="color:#fe9900;"><strong class="text">Admisión</strong></a> 
+    <div class="span3"><div id="media_image-3" class="widget gt3_widget widget_media_image"><a href="https://www.unemi.edu.ec/" target="_blank" data-wpel-link="internal"><img width="123" height="90" align="left" src="https://www.unemi.edu.ec/wp-content/uploads/2021/09/LOGO-WEB-BLANCO-300x120.png" class="image wp-image-27456  attachment-225x90 size-225x90" alt="" loading="lazy" style="max-width: 100%; height: auto;" srcset="https://www.unemi.edu.ec/wp-content/uploads/2021/09/LOGO-WEB-BLANCO-300x120.png 300w, https://www.unemi.edu.ec/wp-content/uploads/2021/09/LOGO-WEB-BLANCO.png 500w"  sizes="(max-width: 225px) 100vw, 225px"></a></div>
+  </nav>
+  <a href="#" id="back_to_top" class="show"></a>
+
+</div>
+</html>
